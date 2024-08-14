@@ -1,0 +1,56 @@
+:root {
+  --custom-base-color: rebeccapurple;
+  --custom-accent-color: purple;
+}
+
+/* Top Bar */
+.monaco-editor .scroll-decoration {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.75) !important;
+  top: -6px !important;
+}
+
+/* Side Bar */
+.part.sidebar {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.75) !important;
+}
+
+/* Scroll Bar */
+.slider {
+  position: absolute !important;
+  right: 1px !important;
+  width: 1px !important;
+  background: var(--custom-accent-color) !important;
+  left: auto !important;
+}
+
+.monaco-editor-hover,
+.monaco-hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.75) !important;
+  padding: 10px !important;
+  background-image: linear-gradient(
+    var(--custom-base-color) 0%,
+    var(--custom-accent-color) 100%
+  ) !important;
+  backdrop-filter: blur(3px) !important;
+  border-radius: 20px !important;
+  border: none !important;
+}
+
+.editor-widget {
+  padding: 10px !important;
+  background: linear-gradient(
+    var(--custom-base-color) 0%,
+    var(--custom-accent-color) 100%
+  ) !important;
+  box-shadow: 0 8px 32px var(--custom-accent-color) !important;
+  border-radius: 1rem !important;
+  border: none !important;
+}
+
+.monaco-list-row.focused {
+  border-radius: 1rem !important;
+}
+
+.monaco-list-row:hover {
+  border-radius: 1rem !important;
+}
